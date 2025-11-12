@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assignment5_Library
 {
-    public class Class1
+    public class HashingService
     {
     }
 }
