@@ -1,0 +1,10 @@
+## Ignore Visual Studio files 
+[Bb]in/ 
+[Oo]bj/ 
+.vs/ 
+packages/ 
+*.suo 
+*.user 
+*.dll 
+*.pdb 
+*.cache 
