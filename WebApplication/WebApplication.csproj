@@ -115,6 +115,7 @@
     <Content Include="About.aspx" />
     <Content Include="App_Data\Member.xml" />
     <Content Include="App_Data\Staff.xml" />
+    <Content Include="CaptchaControl.ascx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -195,6 +196,7 @@
     <Content Include="Services\MyWebService.asmx" />
     <Content Include="Site.Master" />
     <Content Include="Staff.aspx" />
+    <Content Include="TestCaptcha.aspx" />
     <Content Include="TryIt\DllLibraryTest.aspx" />
     <Content Include="TryIt\ServiceTest.aspx" />
     <Content Include="UserControls\LoginControl.ascx" />
@@ -214,6 +216,12 @@
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="CaptchaControl.ascx.cs">
+      <DependentUpon>CaptchaControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CaptchaControl.ascx.designer.cs">
+      <DependentUpon>CaptchaControl.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -263,6 +271,12 @@
     </Compile>
     <Compile Include="Staff.aspx.designer.cs">
       <DependentUpon>Staff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestCaptcha.aspx.cs">
+      <DependentUpon>TestCaptcha.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestCaptcha.aspx.designer.cs">
+      <DependentUpon>TestCaptcha.aspx</DependentUpon>
     </Compile>
     <Compile Include="TryIt\DllLibraryTest.aspx.cs">
       <DependentUpon>DllLibraryTest.aspx</DependentUpon>
