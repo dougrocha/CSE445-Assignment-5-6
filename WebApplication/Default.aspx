@@ -1,12 +1,7 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="WebApplication._Default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <h1>Content here for Form 1</h1>
-
-    <!-- Navigation Buttons -->
     <div class="section">
-        <h2>Application Navigation</h2>
-        
         <div>
             <h3>Try It Pages:</h3>
 
@@ -17,6 +12,8 @@
         <br />
 
         <div class="button-group">
+            <h3>Page Navigation</h3>
+
             <asp:Button ID="btnMemberPage" runat="server" Text="Member Page"
                 OnClick="btnMemberPage_Click" Width="150px" />
             <asp:Button ID="btnStaffPage" runat="server" Text="Staff Page"
