@@ -6,6 +6,16 @@
     <!-- Navigation Buttons -->
     <div class="section">
         <h2>Application Navigation</h2>
+        
+        <div>
+            <h3>Try It Pages:</h3>
+
+            <asp:Button ID="btnDllPage" runat="server" Text="DLL Page"
+                OnClick="btnDllPage_Click" Width="150px" />
+        </div>
+
+        <br />
+
         <div class="button-group">
             <asp:Button ID="btnMemberPage" runat="server" Text="Member Page"
                 OnClick="btnMemberPage_Click" Width="150px" />

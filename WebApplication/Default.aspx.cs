@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Web.UI;
-using Assignment5_Library;
 
 namespace WebApplication
 {
@@ -18,6 +17,11 @@ namespace WebApplication
         protected void btnStaffPage_Click(object sender, EventArgs e)
         {
             Response.Redirect("Staff.aspx");
+        }
+
+        protected void btnDllPage_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("TryIt/DllLibraryTest.aspx");
         }
     }
 }

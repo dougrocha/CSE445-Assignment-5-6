@@ -195,6 +195,7 @@
     <Content Include="Services\MyWebService.asmx" />
     <Content Include="Site.Master" />
     <Content Include="Staff.aspx" />
+    <Content Include="TryIt\DllLibraryTest.aspx" />
     <Content Include="TryIt\ServiceTest.aspx" />
     <Content Include="UserControls\LoginControl.ascx" />
     <Content Include="ViewSwitcher.ascx" />
@@ -262,6 +263,13 @@
     </Compile>
     <Compile Include="Staff.aspx.designer.cs">
       <DependentUpon>Staff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TryIt\DllLibraryTest.aspx.cs">
+      <DependentUpon>DllLibraryTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TryIt\DllLibraryTest.aspx.designer.cs">
+      <DependentUpon>DllLibraryTest.aspx</DependentUpon>
     </Compile>
     <Compile Include="TryIt\ServiceTest.aspx.cs">
       <DependentUpon>ServiceTest.aspx</DependentUpon>
