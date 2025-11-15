@@ -1,2 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<members></members>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<members>
+  <member>
+    <username>test</username>
+    <password>04f8996da763b7a969b1028ee3007569eaf3a635486ddab211d512c85b9df8fb</password>
+    <joinDate>2025-11-15</joinDate>
+  </member>
+</members>

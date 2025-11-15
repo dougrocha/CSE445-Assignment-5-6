@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DecryptionService.cs" />
     <Compile Include="EncryptionService.cs" />
     <Compile Include="HashingService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
