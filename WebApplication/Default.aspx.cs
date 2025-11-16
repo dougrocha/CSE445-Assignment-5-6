@@ -23,5 +23,10 @@ namespace WebApplication
         {
             Response.Redirect("TryIt/DllLibraryTest.aspx");
         }
+
+        protected void btnDougWebService(object sender, EventArgs e)
+        {
+            Response.Redirect("TryIt/DougWebService.aspx");
+        }
     }
 }

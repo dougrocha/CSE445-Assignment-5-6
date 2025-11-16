@@ -7,6 +7,9 @@
 
             <asp:Button ID="btnDllPage" runat="server" Text="DLL Page"
                 OnClick="btnDllPage_Click" Width="150px" />
+
+            <asp:Button ID="btnDougWebServicePage" runat="server" Text="Doug Web Service Test Page"
+                OnClick="btnDougWebService" Width="150px" />
         </div>
 
         <br />

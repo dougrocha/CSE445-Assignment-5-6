@@ -24,6 +24,15 @@ namespace WebApplication
         protected global::System.Web.UI.WebControls.Button btnDllPage;
 
         /// <summary>
+        /// btnDougWebServicePage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnDougWebServicePage;
+
+        /// <summary>
         /// btnMemberPage control.
         /// </summary>
         /// <remarks>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://tempuri.org/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="RandomNumberGenerator">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="lowBound" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="highBound" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RandomNumberGeneratorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RandomNumberGeneratorResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HashString">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="input" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HashStringResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HashStringResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyHash">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="input" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="hash" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyHashResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="VerifyHashResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EncryptString">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="plainText" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EncryptStringResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EncryptStringResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DecryptString">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cipherText" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DecryptStringResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DecryptStringResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="RandomNumberGeneratorSoapIn">
+    <wsdl:part name="parameters" element="tns:RandomNumberGenerator" />
+  </wsdl:message>
+  <wsdl:message name="RandomNumberGeneratorSoapOut">
+    <wsdl:part name="parameters" element="tns:RandomNumberGeneratorResponse" />
+  </wsdl:message>
+  <wsdl:message name="HashStringSoapIn">
+    <wsdl:part name="parameters" element="tns:HashString" />
+  </wsdl:message>
+  <wsdl:message name="HashStringSoapOut">
+    <wsdl:part name="parameters" element="tns:HashStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="VerifyHashSoapIn">
+    <wsdl:part name="parameters" element="tns:VerifyHash" />
+  </wsdl:message>
+  <wsdl:message name="VerifyHashSoapOut">
+    <wsdl:part name="parameters" element="tns:VerifyHashResponse" />
+  </wsdl:message>
+  <wsdl:message name="EncryptStringSoapIn">
+    <wsdl:part name="parameters" element="tns:EncryptString" />
+  </wsdl:message>
+  <wsdl:message name="EncryptStringSoapOut">
+    <wsdl:part name="parameters" element="tns:EncryptStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="DecryptStringSoapIn">
+    <wsdl:part name="parameters" element="tns:DecryptString" />
+  </wsdl:message>
+  <wsdl:message name="DecryptStringSoapOut">
+    <wsdl:part name="parameters" element="tns:DecryptStringResponse" />
+  </wsdl:message>
+  <wsdl:portType name="DougWebServiceSoap">
+    <wsdl:operation name="RandomNumberGenerator">
+      <wsdl:input message="tns:RandomNumberGeneratorSoapIn" />
+      <wsdl:output message="tns:RandomNumberGeneratorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HashString">
+      <wsdl:input message="tns:HashStringSoapIn" />
+      <wsdl:output message="tns:HashStringSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerifyHash">
+      <wsdl:input message="tns:VerifyHashSoapIn" />
+      <wsdl:output message="tns:VerifyHashSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EncryptString">
+      <wsdl:input message="tns:EncryptStringSoapIn" />
+      <wsdl:output message="tns:EncryptStringSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DecryptString">
+      <wsdl:input message="tns:DecryptStringSoapIn" />
+      <wsdl:output message="tns:DecryptStringSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DougWebServiceSoap" type="tns:DougWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RandomNumberGenerator">
+      <soap:operation soapAction="http://tempuri.org/RandomNumberGenerator" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HashString">
+      <soap:operation soapAction="http://tempuri.org/HashString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyHash">
+      <soap:operation soapAction="http://tempuri.org/VerifyHash" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EncryptString">
+      <soap:operation soapAction="http://tempuri.org/EncryptString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DecryptString">
+      <soap:operation soapAction="http://tempuri.org/DecryptString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DougWebServiceSoap12" type="tns:DougWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RandomNumberGenerator">
+      <soap12:operation soapAction="http://tempuri.org/RandomNumberGenerator" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HashString">
+      <soap12:operation soapAction="http://tempuri.org/HashString" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyHash">
+      <soap12:operation soapAction="http://tempuri.org/VerifyHash" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EncryptString">
+      <soap12:operation soapAction="http://tempuri.org/EncryptString" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DecryptString">
+      <soap12:operation soapAction="http://tempuri.org/DecryptString" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DougWebService">
+    <wsdl:port name="DougWebServiceSoap" binding="tns:DougWebServiceSoap">
+      <soap:address location="https://localhost:44394/Services/DougWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DougWebServiceSoap12" binding="tns:DougWebServiceSoap12">
+      <soap12:address location="https://localhost:44394/Services/DougWebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
