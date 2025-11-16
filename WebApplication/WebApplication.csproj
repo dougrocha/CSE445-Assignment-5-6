@@ -143,6 +143,7 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
+    <Content Include="DougServiceDirectory.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Member.aspx" />
@@ -225,6 +226,7 @@
     <Content Include="TryIt\TestCaptcha.aspx" />
     <Content Include="TryIt\DllLibraryTest.aspx" />
     <Content Include="TryIt\ServiceTest.aspx" />
+    <Content Include="TryIt\TestLoginControl.aspx" />
     <Content Include="UserControls\CaptchaControl.ascx" />
     <Content Include="UserControls\LoginControl.ascx" />
     <Content Include="ViewSwitcher.ascx" />
@@ -261,6 +263,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DougServiceDirectory.aspx.cs">
+      <DependentUpon>DougServiceDirectory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DougServiceDirectory.aspx.designer.cs">
+      <DependentUpon>DougServiceDirectory.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -329,6 +338,13 @@
     </Compile>
     <Compile Include="TryIt\ServiceTest.aspx.designer.cs">
       <DependentUpon>ServiceTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TryIt\TestLoginControl.aspx.cs">
+      <DependentUpon>TestLoginControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TryIt\TestLoginControl.aspx.designer.cs">
+      <DependentUpon>TestLoginControl.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserControls\CaptchaControl.ascx.cs">
       <DependentUpon>CaptchaControl.ascx</DependentUpon>

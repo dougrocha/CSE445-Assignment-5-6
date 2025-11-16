@@ -7,65 +7,47 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApplication
+namespace WebApplication.TryIt
 {
 
 
-    public partial class _Default
+    public partial class TestLoginControl
     {
 
         /// <summary>
-        /// btnDllPage control.
+        /// LoginControl1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnDllPage;
+        protected global::WebApplication.UserControls.LoginControl LoginControl1;
 
         /// <summary>
-        /// btnDougWebServicePage control.
+        /// lblSessionInfo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnDougWebServicePage;
+        protected global::System.Web.UI.WebControls.Label lblSessionInfo;
 
         /// <summary>
-        /// btnMemberPage control.
+        /// btnCheckSession control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnMemberPage;
+        protected global::System.Web.UI.WebControls.Button btnCheckSession;
 
         /// <summary>
-        /// btnStaffPage control.
+        /// btnLogout control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnStaffPage;
-
-        /// <summary>
-        /// lblLoginStatus control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblLoginStatus;
-
-        /// <summary>
-        /// lnkDougServiceDirectory control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink lnkDougServiceDirectory;
+        protected global::System.Web.UI.WebControls.Button btnLogout;
     }
 }

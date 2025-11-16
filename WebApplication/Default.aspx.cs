@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Web.UI;
 
 namespace WebApplication
@@ -27,6 +27,11 @@ namespace WebApplication
         protected void btnDougWebService(object sender, EventArgs e)
         {
             Response.Redirect("TryIt/DougWebService.aspx");
+        }
+
+        protected void btnDougServiceDirectory_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("DougServiceDirectory.aspx");
         }
     }
 }
